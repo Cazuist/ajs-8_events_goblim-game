@@ -1,0 +1,55 @@
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.board-field {
+  --size: 4;
+  
+  display: grid;
+  grid-gap: 10px;
+  grid-template: repeat(var(--size), 100px) / repeat(var(--size), 100px);
+}
+
+.board-cell {  
+  border: 1px solid black;
+  border-radius: 10px;
+  background:
+    url("../img/hole.png"), 
+    linear-gradient(to right top, green, gray, blue, black);
+
+  background-size: 90%, 100%;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.character {
+  height: 100%;
+  background-image: url("../img/goblin.png");
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center; 
+
+  cursor: url('../img/i.png') 20 5, pointer;
+}
+
+.wrapper {
+  width: 430px;
+  margin: 0 auto;
+}
+
+.statistic {
+  margin-bottom: 10px;
+  background-color: cyan;
+}
+
+.stat-row {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  color: brown;
+}
+
+.stat-row span {
+  color: blue;
+}
